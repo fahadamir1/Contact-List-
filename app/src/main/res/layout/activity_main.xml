@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <com.google.android.material.divider.MaterialDivider
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:background="@color/black"
+        />
+    <EditText
+        android:id="@+id/name"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name"
+        android:ems="14"
+        android:inputType="textPersonName"
+        android:textColorHint="#B9737373"
+        android:drawableStart="@drawable/baseline_person_24"
+        android:textSize="20sp"
+        />
+    <EditText
+        android:id="@+id/contact"
+        android:layout_marginTop="80dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Contact"
+        android:ems="14"
+        android:inputType="numberDecimal"
+        android:textColorHint="#B9737373"
+        android:drawableStart="@drawable/baseline_call_24"
+        android:textSize="20sp"
+        />
+
+    <com.google.android.material.divider.MaterialDivider
+        android:id="@+id/bar"
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:layout_alignBottom="@+id/contact"
+        android:layout_marginBottom="-15dp"
+        android:background="@color/black" />
+
+    <Button
+        android:id="@+id/search"
+        android:text="Search"
+        android:onClick="Search_User"
+        android:fontFamily="sans-serif-black"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/bar"
+        android:layout_marginBottom="-53dp"
+        android:layout_marginLeft="5dp"
+        android:backgroundTint="@color/black"
+        />
+
+    <Button
+        android:id="@+id/Delete"
+        android:text="Delete"
+        android:layout_marginLeft="5dp"
+        android:onClick="deleteItem"
+        android:fontFamily="sans-serif-black"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/bar"
+        android:layout_marginBottom="-107dp"
+        android:backgroundTint="@color/black" />
+
+    <Button
+        android:id="@+id/AddNew"
+        android:onClick="Newuseradd"
+        android:layout_width="200dp"
+        android:text="Add New"
+        android:fontFamily="sans-serif-black"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/bar"
+        android:layout_marginLeft="206dp"
+        android:layout_marginBottom="-107dp"
+        android:backgroundTint="@color/black" />
+
+    <Button
+        android:id="@+id/update"
+        android:fontFamily="sans-serif-black"
+        android:text="Update"
+        android:onClick="Update_User"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/bar"
+        android:layout_marginLeft="206dp"
+        android:layout_marginBottom="-53dp"
+        android:backgroundTint="@color/black" />
+    <com.google.android.material.divider.MaterialDivider
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:background="@color/black"
+        android:layout_alignBottom="@+id/Delete"
+        android:layout_marginBottom="-20dp"
+        />
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignBottom="@+id/Delete"
+        android:layout_marginBottom="-475dp" />
+
+
+</RelativeLayout>
